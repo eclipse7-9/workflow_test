@@ -19,7 +19,7 @@ export default defineConfig([
 
   {
     files: ["**/*.{jsx,tsx}"],
-    extends: ["plugin:react/recommended"],
+    extends: ["plugin:@eslint/js/recommended"],
     settings: {
       react: {
         version: "detect",

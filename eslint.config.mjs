@@ -9,7 +9,7 @@ export default defineConfig([
     plugins: {
       js,
     },
-    extends: ["@eslint/js/recommended"],
+    extends: ["plugin:@eslint/js/recommended"],
     languageOptions: {
       globals: globals.browser,
     },

@@ -7,9 +7,9 @@ export default defineConfig([
   {
     files: ["**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
     plugins: {
-      "@eslint/js": js,
+      js,
     },
-    extends: ["plugin:@eslint/js/recommended"],
+    extends: ["@eslint/js/recommended"],
     languageOptions: {
       globals: globals.browser,
     },

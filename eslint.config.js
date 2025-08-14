@@ -1,17 +1,16 @@
 import js from "@eslint/js";
+import globals from "globals";
 
 export default [
+  {
+    ignores: ["dist/**"], 
+  },
   js.configs.recommended,
   {
-    files: ["**/*.js"],
     languageOptions: {
-      ecmaVersion: 2021,
-      sourceType: "module",
-    },
-    rules: {
-      // Aquí puedes poner reglas personalizadas
-      "no-unused-vars": "warn",
-      "no-console": "off",
+      globals: {
+        ...globals.node, 
+      },
     },
   },
 ];

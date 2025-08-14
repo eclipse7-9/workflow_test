@@ -1,1 +1,2 @@
-"console.log('Hola CI!');" 
+const msg: string = "Hola mundo!!!!!!!!";
+console.log(msg);
